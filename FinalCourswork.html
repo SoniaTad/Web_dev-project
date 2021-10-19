@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+  H1 {
+   
+    
+    border:10px groove royalblue;
+    padding: 30px;
+    background-color:#0546ad;
+    text-align:center;
+  }
+  form{
+    border: 5px groove royalblue;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+    width:700px;
+    text-align: center;
+    background-color: white;
+
+  }
+  body{
+   background-color:#ffce8a;
+   
+  }
+  select{
+     background-color: #ffe4bf;
+  }
+  input{
+     background-color: #ffe4bf;
+  }
+  p{
+    font-size: 18px;
+  }
+  
+     </style> 
+    <title>Sky agency website </title>
+    
+  </head>
+  <body>
+    <header>
+  <H1 style='color:white;'>Sky Travel Booking Portal</H1>
+   <h2> Welcome !</h2>
+   <p >Sky Travel Booking Portal gives you the opportunity to visit The United Kingdom by bus or air without emptying your pockets!</p>
+   <p>If you are interested in visiting <b>London</b> , <b>Bristol</b> , <b>Newcastle</b> , <b>Manchester</b> , <b>Glasgow</b> or <b>Cardiff</b> you came to the right place </p>
+     </header>
+   <form action="FinalCoursework.py" method="POST">  
+    
+     Departure :   <select name="Dep"> 
+                    <option value='2'>London</option>
+                    <option value='3'>Bristol</option>
+                     <option value='1'>Manchester</option>
+                     <option value='6'>Newcastle</option>
+                     <option value='4'>Glasgow</option>
+                      <option value='5'>Cardiff</option>                
+                       </select>  
+                       <br> <br>
+
+        Destination  :   <select name="Des"> 
+                  <option value='2'>London</option>
+                       <option value='3'>Bristol</option>
+                       <option value='1'>Manchester</option>
+                       <option value='6'>Newcastle</option>
+                      <option value='4'>Glasgow</option>
+                      <option value='5'>Cardiff</option>               
+                       </select>   
+                       <br> <br>                
+        Date :     <input type="date" id="start"                      name="trip-start"
+                      value="2021-07-13"
+                      min="2021-07-13" max="2022-07-13"
+                      size="20"><br><br>
+             
+         
+        +15yo : <input type="number" id="quantity" name="Adults" min="0" max="5" step="1" value="0"><br> <br>
+        12-15yo  :  <input type="number" id="quantity" name="Teens" min="0" max="5" step="1" value="0">
+         <br> <br>
+        2-11yo:  <input type="number" id="quantity" name="Kids" min="0" max="5" step="1" value="0">
+         <br> <br>
+        0-2yo :  <input type="number" id="quantity" name="Toddlers" min="0" max="5" step="1" value="0">
+       <br> <br>
+	<input type="submit" value="Go!"> 
+   </form>
+  </body>
+</html>
